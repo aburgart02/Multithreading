@@ -1,0 +1,15 @@
+C:\Users\aburg\Desktop\QuantumTime\QuantumTime\bin\Debug\net6.0\QuantumTime.exe
+C:\Users\aburg\Desktop\QuantumTime\QuantumTime\bin\Debug\net6.0\QuantumTime.deps.json
+C:\Users\aburg\Desktop\QuantumTime\QuantumTime\bin\Debug\net6.0\QuantumTime.runtimeconfig.json
+C:\Users\aburg\Desktop\QuantumTime\QuantumTime\bin\Debug\net6.0\QuantumTime.dll
+C:\Users\aburg\Desktop\QuantumTime\QuantumTime\bin\Debug\net6.0\QuantumTime.pdb
+C:\Users\aburg\Desktop\QuantumTime\QuantumTime\obj\Debug\net6.0\QuantumTime.csproj.AssemblyReference.cache
+C:\Users\aburg\Desktop\QuantumTime\QuantumTime\obj\Debug\net6.0\QuantumTime.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aburg\Desktop\QuantumTime\QuantumTime\obj\Debug\net6.0\QuantumTime.AssemblyInfoInputs.cache
+C:\Users\aburg\Desktop\QuantumTime\QuantumTime\obj\Debug\net6.0\QuantumTime.AssemblyInfo.cs
+C:\Users\aburg\Desktop\QuantumTime\QuantumTime\obj\Debug\net6.0\QuantumTime.csproj.CoreCompileInputs.cache
+C:\Users\aburg\Desktop\QuantumTime\QuantumTime\obj\Debug\net6.0\QuantumTime.dll
+C:\Users\aburg\Desktop\QuantumTime\QuantumTime\obj\Debug\net6.0\refint\QuantumTime.dll
+C:\Users\aburg\Desktop\QuantumTime\QuantumTime\obj\Debug\net6.0\QuantumTime.pdb
+C:\Users\aburg\Desktop\QuantumTime\QuantumTime\obj\Debug\net6.0\QuantumTime.genruntimeconfig.cache
+C:\Users\aburg\Desktop\QuantumTime\QuantumTime\obj\Debug\net6.0\ref\QuantumTime.dll
