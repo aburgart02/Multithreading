@@ -7,9 +7,9 @@ namespace Task
     {
         public static void Payload()
         {
-            var s = "";
-            for (int i = 0; i < 100; i++)
-                s += "a";
+            var sum = 0;
+            for (var i = 0; i < 10000; i++)
+                sum += 1;
         }
 
         public static void Main()
