@@ -1,71 +1,49 @@
 ﻿using System.Diagnostics;
-using System.Threading;
 
 namespace Task
 {
     class Program
     {
-        public static void Payload()
-        {
-            var sum = 0;
-            for (var i = 0; i < 10000; i++)
-                sum += 1;
-        }
+        private static Stopwatch stopwatch;
 
-        public static void Main()
+        static void Main(string[] args)
         {
-            var process = Process.GetCurrentProcess();
-            var data = new List<Tuple<int, long>>();
-            process.ProcessorAffinity = (IntPtr)Math.Pow(2, (Environment.ProcessorCount - 1));
-            process.PriorityClass = ProcessPriorityClass.RealTime;
-            Stopwatch stopwatch = new Stopwatch();
-            stopwatch.Start();
-            Thread thread1 = new Thread(() =>
+            Process.GetCurrentProcess().PriorityClass = ProcessPriorityClass.RealTime;
+            Process.GetCurrentProcess().ProcessorAffinity = (IntPtr)Math.Pow(2, (Environment.ProcessorCount - 1));
+            var data = new List<long>(10);
+            for (var i = 0; i < 10; i++)
             {
-                for (int i = 0; i < 100000; i++)
+                stopwatch = new Stopwatch();
+                var thread1 = new Thread(Thread1StartStopwatch)
                 {
-                    lock (data)
-                    {
-                        Payload();
-                        data.Add(Tuple.Create(1, stopwatch.ElapsedMilliseconds));
-                    }
-                }
-            });
-            Thread thread2 = new Thread(() =>
-            {
-                for (int i = 0; i < 100000; i++)
+                    IsBackground = true,
+                    Priority = ThreadPriority.Normal,
+                };
+                thread1.Start();
+                var thread2 = new Thread(Thread2StopWatch)
                 {
-                    lock (data)
-                    {
-                        Payload();
-                        data.Add(Tuple.Create(2, stopwatch.ElapsedMilliseconds));
-                    }
-                }
-            });
-            thread1.Start();
-            thread2.Start();
-            thread1.Join();
-            thread2.Join();
-            GetQuantum(data);
-        }
-
-        public static void GetQuantum(List<Tuple<int, long>>  data)
-        {
-            int count = 0;
-            long sum = 0;
-            long time = 0;
-            int threadNumber = data[0].Item1;
-            foreach (var item in data)
-            {
-                if (item.Item1 != threadNumber)
-                {
-                    count++;
-                    sum += (item.Item2 - time);
-                    threadNumber = item.Item1;
-                    time = item.Item2;
-                }
+                    IsBackground = true,
+                    Priority = ThreadPriority.Highest,
+                };
+                thread2.Start();
+                thread2.Join();
+                thread1.Join();
+                data.Add(stopwatch.ElapsedMilliseconds);
             }
-            Console.WriteLine(sum / count);
+            for (var i = 0; i < data.Count; i++)
+                Console.WriteLine($"{i + 1}. {data[i]}");
+            Console.WriteLine($"Average: {data.Average()}");
+        }
+
+        private static void Thread1StartStopwatch()
+        {
+            stopwatch.Start();
+            while (stopwatch.IsRunning) { }
+        }
+
+        private static void Thread2StopWatch()
+        {
+            stopwatch.Stop();
         }
     }
 }
