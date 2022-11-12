@@ -1,0 +1,15 @@
+C:\Users\aburg\Desktop\IMultiLock\IMultiLock\bin\Debug\net6.0\IMultiLock.exe
+C:\Users\aburg\Desktop\IMultiLock\IMultiLock\bin\Debug\net6.0\IMultiLock.deps.json
+C:\Users\aburg\Desktop\IMultiLock\IMultiLock\bin\Debug\net6.0\IMultiLock.runtimeconfig.json
+C:\Users\aburg\Desktop\IMultiLock\IMultiLock\bin\Debug\net6.0\IMultiLock.dll
+C:\Users\aburg\Desktop\IMultiLock\IMultiLock\bin\Debug\net6.0\IMultiLock.pdb
+C:\Users\aburg\Desktop\IMultiLock\IMultiLock\obj\Debug\net6.0\IMultiLock.csproj.AssemblyReference.cache
+C:\Users\aburg\Desktop\IMultiLock\IMultiLock\obj\Debug\net6.0\IMultiLock.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aburg\Desktop\IMultiLock\IMultiLock\obj\Debug\net6.0\IMultiLock.AssemblyInfoInputs.cache
+C:\Users\aburg\Desktop\IMultiLock\IMultiLock\obj\Debug\net6.0\IMultiLock.AssemblyInfo.cs
+C:\Users\aburg\Desktop\IMultiLock\IMultiLock\obj\Debug\net6.0\IMultiLock.csproj.CoreCompileInputs.cache
+C:\Users\aburg\Desktop\IMultiLock\IMultiLock\obj\Debug\net6.0\IMultiLock.dll
+C:\Users\aburg\Desktop\IMultiLock\IMultiLock\obj\Debug\net6.0\refint\IMultiLock.dll
+C:\Users\aburg\Desktop\IMultiLock\IMultiLock\obj\Debug\net6.0\IMultiLock.pdb
+C:\Users\aburg\Desktop\IMultiLock\IMultiLock\obj\Debug\net6.0\IMultiLock.genruntimeconfig.cache
+C:\Users\aburg\Desktop\IMultiLock\IMultiLock\obj\Debug\net6.0\ref\IMultiLock.dll
