@@ -211,10 +211,19 @@ namespace Task
 
             var disposable = new Disposable(blockedObjects);
 
-            foreach (var blockedObject in blockedObjects)
-                Monitor.Enter(blockedObject);
-            Console.WriteLine("Объект заблокирован");
-
+            var isError = true;
+            try
+            {
+                foreach (var blockedObject in blockedObjects)
+                    Monitor.Enter(blockedObject);
+                Console.WriteLine("Объект заблокирован");
+                isError = false;
+            }
+            finally
+            {
+                if (isError)
+                    disposable.Dispose();
+            }
             return disposable;
         }
     }
