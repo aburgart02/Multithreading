@@ -158,14 +158,9 @@ namespace Task
                         dictionary.GetOrAdd(key, syncObj);
                 }
 
-                var blockedObjects = keys
-                    .Select(i => dictionary[i])
-                    .OrderBy(i => i)
-                    .ToArray();
+                var disposable = new Disposable(dictionary.Keys.ToArray());
 
-                var disposable = new Disposable(blockedObjects);
-
-                foreach (var blockedObject in blockedObjects)
+                foreach (var blockedObject in dictionary.Keys.ToArray())
                     Monitor.Enter(blockedObject);
                 Console.WriteLine("Объект заблокирован");
                 return disposable;
