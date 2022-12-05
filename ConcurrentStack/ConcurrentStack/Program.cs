@@ -53,6 +53,7 @@ namespace Task
 
         public class StackNode<T>
         {
+            public int Count;
             public T Value { get; }
             public StackNode<T> Previous { get; set; }
 
@@ -71,23 +72,25 @@ namespace Task
 
         public class ConcurrentStack<T> : IStack<T>
         {
-            private int _count;
-            public int Count => _count;
-            private StackNode<T> currentNode;
+            private StackNode<T> currentNode = new StackNode<T>(default);
+            public int Count => currentNode.Count;
 
             public void Push(T item)
             {
                 var spinWait = new SpinWait();
                 while (true)
                 {
-                    var node = new StackNode<T>(item) { Previous = currentNode };
+                    var node = new StackNode<T>(item)
+                    {
+                        Previous = currentNode,
+                        Count = currentNode is null ? 0 : currentNode.Count + 1
+                    };
 
                     if (Interlocked.CompareExchange(ref currentNode, node, node.Previous) == node.Previous)
                         break;
 
                     spinWait.SpinOnce();
                 }
-                Interlocked.Increment(ref _count);
             }
 
             public bool TryPop(out T item)
@@ -106,7 +109,6 @@ namespace Task
                     if (Interlocked.CompareExchange(ref currentNode, node.Previous, node) == node)
                     {
                         item = node.Value;
-                        Interlocked.Decrement(ref _count);
                         return true;
                     }
 
