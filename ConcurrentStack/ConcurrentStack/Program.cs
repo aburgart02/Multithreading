@@ -73,7 +73,14 @@ namespace Task
         public class ConcurrentStack<T> : IStack<T>
         {
             private StackNode<T> currentNode;
-            public int Count => currentNode is null ? 0 : currentNode.Count + 1;
+            public int Count
+            {
+                get
+                {
+                    var node = currentNode;
+                    return node is null ? 0 : node.Count + 1;
+                }
+            }
 
             public void Push(T item)
             {
