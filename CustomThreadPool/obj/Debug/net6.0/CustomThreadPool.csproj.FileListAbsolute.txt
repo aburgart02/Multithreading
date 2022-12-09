@@ -1,0 +1,15 @@
+C:\Users\aburg\Desktop\CustomThreadPool\bin\Debug\net6.0\CustomThreadPool.exe
+C:\Users\aburg\Desktop\CustomThreadPool\bin\Debug\net6.0\CustomThreadPool.deps.json
+C:\Users\aburg\Desktop\CustomThreadPool\bin\Debug\net6.0\CustomThreadPool.runtimeconfig.json
+C:\Users\aburg\Desktop\CustomThreadPool\bin\Debug\net6.0\CustomThreadPool.dll
+C:\Users\aburg\Desktop\CustomThreadPool\bin\Debug\net6.0\CustomThreadPool.pdb
+C:\Users\aburg\Desktop\CustomThreadPool\obj\Debug\net6.0\CustomThreadPool.csproj.AssemblyReference.cache
+C:\Users\aburg\Desktop\CustomThreadPool\obj\Debug\net6.0\CustomThreadPool.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aburg\Desktop\CustomThreadPool\obj\Debug\net6.0\CustomThreadPool.AssemblyInfoInputs.cache
+C:\Users\aburg\Desktop\CustomThreadPool\obj\Debug\net6.0\CustomThreadPool.AssemblyInfo.cs
+C:\Users\aburg\Desktop\CustomThreadPool\obj\Debug\net6.0\CustomThreadPool.csproj.CoreCompileInputs.cache
+C:\Users\aburg\Desktop\CustomThreadPool\obj\Debug\net6.0\CustomThreadPool.dll
+C:\Users\aburg\Desktop\CustomThreadPool\obj\Debug\net6.0\refint\CustomThreadPool.dll
+C:\Users\aburg\Desktop\CustomThreadPool\obj\Debug\net6.0\CustomThreadPool.pdb
+C:\Users\aburg\Desktop\CustomThreadPool\obj\Debug\net6.0\CustomThreadPool.genruntimeconfig.cache
+C:\Users\aburg\Desktop\CustomThreadPool\obj\Debug\net6.0\ref\CustomThreadPool.dll
