@@ -1,0 +1,16 @@
+C:\Users\aburg\Desktop\DataParallelism\obj\Debug\net6.0\DataParallelismTask.csproj.AssemblyReference.cache
+C:\Users\aburg\Desktop\DataParallelism\obj\Debug\net6.0\DataParallelismTask.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aburg\Desktop\DataParallelism\obj\Debug\net6.0\DataParallelismTask.AssemblyInfoInputs.cache
+C:\Users\aburg\Desktop\DataParallelism\obj\Debug\net6.0\DataParallelismTask.AssemblyInfo.cs
+C:\Users\aburg\Desktop\DataParallelism\obj\Debug\net6.0\DataParallelismTask.csproj.CoreCompileInputs.cache
+C:\Users\aburg\Desktop\DataParallelism\bin\Debug\net6.0\DataParallelismTask.exe
+C:\Users\aburg\Desktop\DataParallelism\bin\Debug\net6.0\DataParallelismTask.deps.json
+C:\Users\aburg\Desktop\DataParallelism\bin\Debug\net6.0\DataParallelismTask.runtimeconfig.json
+C:\Users\aburg\Desktop\DataParallelism\bin\Debug\net6.0\DataParallelismTask.dll
+C:\Users\aburg\Desktop\DataParallelism\bin\Debug\net6.0\DataParallelismTask.pdb
+C:\Users\aburg\Desktop\DataParallelism\obj\Debug\net6.0\DataParallelismTask.dll
+C:\Users\aburg\Desktop\DataParallelism\obj\Debug\net6.0\refint\DataParallelismTask.dll
+C:\Users\aburg\Desktop\DataParallelism\obj\Debug\net6.0\DataParallelismTask.pdb
+C:\Users\aburg\Desktop\DataParallelism\obj\Debug\net6.0\DataParallelismTask.genruntimeconfig.cache
+C:\Users\aburg\Desktop\DataParallelism\obj\Debug\net6.0\ref\DataParallelismTask.dll
+C:\Users\aburg\Desktop\DataParallelism\bin\Debug\net6.0\Files\bigLog.log
